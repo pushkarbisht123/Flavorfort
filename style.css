@@ -1,0 +1,481 @@
+* {
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXM4Ny1tbi0yMC5qcGc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+/* preloader start */
+
+#preloader{
+    height: 100vh;
+    width: 100%;
+    background :    #fff  url(img/preloader2.gif) no-repeat center center;
+    z-index: 100;
+    position: fixed;
+    background-size: 20%;
+}
+
+/* preloader end */
+
+/* navbar start  */
+#navbar {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* navbar: logo start */
+
+#logo {
+    margin: 0px 9px;
+}
+
+#logo img {
+    height: 46px;
+    margin: 3px 7px;
+    border-radius: 10px;
+}
+
+#logo img:hover {
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+#navbar {
+    background-color: transparent;
+    opacity: 0.9;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+
+}
+
+
+/* navbar: logo end */
+
+
+
+/* navbar: ul start */
+
+#navbar ul {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 22px;
+    display: block;
+    transition: hr 2s ease-in;
+
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.3s;
+    text-shadow: 0 0 8px #ffffff, 0 0 4px #ffffff;
+
+}
+
+#navbar ul li a:active {
+    color: blue;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.27rem;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* navbar: ul end */
+
+/* navbar : submit start */
+
+#navbar .search input[type="text"] {
+    margin: 10px -10px;
+    padding: 4px 9px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+#navbar .search input[type="text"]:hover {
+    scale: 1.1;
+    transition: 0.2s;
+
+}
+
+#navbar .search input[type="Submit"] {
+    margin: 0px 13px;
+    padding: 4px 9px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+    border: none;
+    color: white;
+    background-color: rgb(99, 96, 96);
+
+}
+
+#navbar .search input[type="Submit"]:hover {
+    background-color: black;
+
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+
+/* navbar : submit end */
+
+
+
+/* navbar end */
+
+/* section start */
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px 3px;
+    height: 200px;
+    align-items: center;
+}
+
+#home {
+    background: url(img/background.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Ubuntu;
+}
+
+/* utility classes st */
+#home_head {
+    font-size: 2.6rem;
+    padding: 12px;
+    font-weight: bold;
+    background: url(https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg);
+    background-size: contain;
+    cursor: default;
+    font-family: 'kanit', sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+.day{
+    font-family: 'kanit', sans-serif;
+    color: black;
+    padding: 15px;
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.266);
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+#home_head2 {
+    font-size: 2.6rem;
+    padding: 12px;
+    font-weight: bold;
+    /* background: url(https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg) ; */
+    /* background-size: contain; */
+    cursor: default;
+    font-family: 'kanit', sans-serif;
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+    background-color: rgba(255, 255, 255, 0.266);
+    color: black;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+
+
+
+}
+
+.h-secondary {
+    font-size: 1.4rem;
+    padding: 8px;
+    font-family: 'kanit';
+}
+
+
+.center {
+    text-align: center;
+}
+
+/* utility classes ed */
+.btn {
+    padding: 7px 10px;
+    margin: 13px 3px;
+    border: 2px solid gray;
+    background-color: rgb(0, 254, 21);
+    font-size: 1.1rem;
+    font-weight: 450;
+    font-family: ubuntu;
+    border-radius: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    scale: 1.1;
+    border: 2px solid black;
+    font-weight: 600;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* services section start */
+
+
+.services-conatiner .hell {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.266);
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+.services-conatiner h1 {
+
+    backdrop-filter: blur(9px);
+    color: white;
+}
+
+
+
+
+.services-conatiner .servies {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #f1f1d4;
+}
+
+.services-conatiner .servies .box {
+    
+    box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffffc1;
+    padding: 19px ;
+    margin: 9px 15px;
+    border-radius: 10px;
+    background: #dfdddd;
+    box-shadow: 20px 20px 66px #848282,
+        -20px -20px 66px #ffffff;
+        cursor: pointer;
+        
+
+
+}
+
+.services-conatiner .servies .box:hover {
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+
+.services-conatiner .servies .box p {
+    font-family: 'kanit';
+    text-align: justify;
+}
+
+
+.services-conatiner .servies img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+/*  services section end */
+
+/* Clients section start */
+.clients-conatiner .hell {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.266);
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+
+.clients-conatiner .servies {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: #f1f1d4;
+}
+/* scroll bar start */
+body::-webkit-scrollbar{
+   display: none;
+}
+
+/* scroll bar end  */
+.clients-conatiner .servies .box {
+    background-color: #c1c1c1;
+    box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffffc1;
+    padding: 19px ;
+    margin: 9px 15px;
+    border-radius: 10px;
+    background: #dfdddd;
+    box-shadow: 20px 20px 66px #848282,
+        -20px -20px 66px #ffffff;
+        cursor: pointer;
+    
+
+
+}
+
+.clients-conatiner .servies .box:hover {
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+
+.clients-conatiner .servies .box p {
+    font-family: 'kanit';
+    text-align: center;
+}
+
+
+.clients-conatiner .servies img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Clients section end */
+
+/* Conatct us  start */
+
+.Contact {
+
+    height: 100%;
+
+}
+
+.Contact-box {
+    display: flex;
+    background-image: url(https://img.freepik.com/premium-photo/food-table-top-view-free-space-your-text_187166-25767.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+
+}
+
+.Contact-box form {
+    width: 30%;
+}
+
+.Contact-box label {
+    font-size: 1.2rem;
+    font-family: 'kanit', sans-serif;
+    color: white;
+}
+
+.Contact-box input,
+.Contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-family: 'kanit';
+}
+
+.Contact-box input,
+.Contact-box textarea:hover {
+    color: black;
+    font-family: 'kanit';
+}
+
+.Contact-box input[type="submit"] {
+    margin-top: 10px;
+    font-family: 'kanit';
+    font-size: 17px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 35px;
+    cursor: pointer;
+    background: #dfdddd;
+    box-shadow: inset 37px 37px 37px #a19f9f,
+        inset -37px -37px 37px #ffffff;
+}
+
+.Contact-box input[type="submit"]:active {
+    scale: 0.9;
+    transition: all ease 0.2s;
+}
+
+/* Conatct us end */
+
+
+/* footer start */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 14px 3px;
+    box-sizing: border-box;
+}
+
+footer div {
+    font-size: 15px;
+    padding: 2px 3px;
+    box-sizing: border-box;
+    font-family: 'kanit';
+}
+
+/* footer end */
+/* section end */
+
+
+
+
